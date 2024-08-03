@@ -1,0 +1,20 @@
+<html>
+<head><title>js domo</title>
+</head>
+<script type="text/javascript">
+function lower()
+{
+    var a=document.getElementById("t1").value;document.getElementById("t1").value=a.toLowerCase();
+}
+function  upper()
+{
+    var a=document.getElementById("t1").value;document.getElementById("t1").value=a.toUpperCase();
+}
+</script>
+</head>
+  <body>
+    <form>
+        Enter your Name<input type="text"id="t1"onblur="lower();"onfocus="upper();"/>
+    </form>
+  </body>
+</html>

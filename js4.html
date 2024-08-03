@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input {
+            width: 200px;
+            height: 50px;
+            margin-top: 15px;
+
+        }
+        label {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <label for="first"> Enter the first number</label>
+    <input id="first" type="text">
+    <label for="second"> Enter the second number</label>
+    <input id="second" type="text">
+    <input id="add" type="button" value="Add">
+    <input id = "sub" type="button" value="Sub">
+    <input id = "pro" type="button" value="Prod">
+    <input id="div" type="button" value="Divide">
+    <input id = "clear" type="button" value="Clear">
+</body>
+<script>
+    
+    
+    document.getElementById('add').addEventListener('click', ()=> {
+        var a = parseInt(document.getElementById('first').value);
+    
+        var b =parseInt( document.getElementById('second').value);
+        alert("The result is:"+(a+b));
+    });
+    document.getElementById('sub').addEventListener('click', ()=> {
+        var a = parseInt(document.getElementById('first').value);
+        var b =parseInt( document.getElementById('second').value);
+        alert("The result is:"+(a-b));
+    });
+    document.getElementById('pro').addEventListener('click', ()=> {
+        var a = parseInt(document.getElementById('first').value);
+        var b =parseInt( document.getElementById('second').value);
+        alert("The result is:"+(a*b));
+    });
+    document.getElementById('div').addEventListener('click', ()=> {
+        var a = parseInt(document.getElementById('first').value);
+    var b =parseInt( document.getElementById('second').value);
+        alert("The result is:"+(a/b));
+    });
+document.getElementById("clear").addEventListener("click",()=> {
+        location.reload();
+    });
+</script>
+</html>
