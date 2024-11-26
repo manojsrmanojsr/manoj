@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>cal</title>
+        <script>
+            function add(){
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=parseInt(a)+parseInt(b);
+                document.getElementById("t3").value=c;
+
+            }
+        </script>
+    </head>
+    <body>
+        <from>
+            enter the number:<input type="text"id="t1">
+            enter the number:<input type="text"id="t2">
+            <input type="button"value="ADD"onclick="add();">
+        </br>result=<input type="text"id="t3">
+
+    </body>
+</html>
