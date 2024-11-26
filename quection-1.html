@@ -1,0 +1,39 @@
+import React, { useState } from 'react';
+
+function TextConverter() {
+  const [text, setText] = useState('');
+
+  const handleChange = (e) => {
+    setText(e.target.value);
+  };
+
+  const convertToUpperCase = () => {
+    setText(text.toUpperCase());
+  };
+
+  const convertToLowerCase = () => {
+    setText(text.toLowerCase());
+  };
+
+  return (
+    <div style={{ padding: '20px', maxWidth: '500px', margin: '0 auto' }}>
+      <h2>Text Converter</h2>
+      <textarea
+        value={text}
+        onChange={handleChange}
+        rows="10"
+        style={{ width: '100%', padding: '10px', fontSize: '16px' }}
+      />
+      <div style={{ marginTop: '10px' }}>
+        <button onClick={convertToUpperCase} style={{ marginRight: '10px' }}>
+          Convert to Uppercase
+        </button>
+        <button onClick={convertToLowerCase}>
+          Convert to Lowercase
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default TextConverter;

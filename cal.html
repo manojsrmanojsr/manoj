@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <script>
+
+            function div(){
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=parseInt(a)/parseInt(b);
+                document.getElementById("t3").value=c;
+            }
+
+            function add(){
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=parseInt(a)+parseInt(b);
+                document.getElementById("t3").value=c;
+            }
+            function sub(){
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=parseInt(a)-parseInt(b);
+                document.getElementById("t3").value=c;
+            }
+            function mul(){
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=parseInt(a)*parseInt(b);
+                document.getElementById("t3").value=c;
+            }
+        </script>
+    </head>
+    <center>
+    <body>
+        <form>
+            enter the number:<input type="text"id="t1"></br>
+            enter the number:<input type="text"id="t2"></br>
+            <input type="button"value="ADD"onclick="add();">
+            <input type="button"value="SUB"onclick="sub();">
+            <input type="button"value="MUL"onclick="mul();">
+            <input type="button"value="Div"onclick="div();">
+        </br> result=<input type="text"Id="t3">
+
+        </form>
+    </center>
+    </body>
+</html>
